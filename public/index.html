@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Websocket</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+
+</head>
+
+<body class="container">
+  <h1 class="mt-2">Websocket</h1>
+  <hr>
+  <p>
+    Server Status:
+    <span style="display: none;" id="lbl-online" class="text-success">Online</span>
+    <span style="display: none;" id="lbl-offline" class="text-danger">Offline</span>
+  </p>
+  <div class="row">
+    <div class="col">
+      <input type="text" id="txtMessage" class="form-control">
+    </div>
+    <div class="col">
+      <button id="btnSend" class="btn btn-primary">Enviar</button>
+    </div>
+  </div>
+
+<script src="./socket.io/socket.io.js"></script>
+<script src="./js/socket-client.js"></script>
+</body>
+</html>
